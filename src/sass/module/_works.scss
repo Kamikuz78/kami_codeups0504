@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.works {
+  margin-top: rem(124);
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(md) {
+    margin-top: rem(206);
+  }
+}
+
+.works__subtitle {
+  top: -43px;
+  @include mq(md) {
+    top: -34px;
+  }
+}
+
+.works__header {
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(md) {
+    // margin: 0 rem(90);
+  }
+}
+
+.works-text-box {
+  margin-top: rem(-53);
+  @include mq(md) {
+    margin-top: 0;
+  }
+}

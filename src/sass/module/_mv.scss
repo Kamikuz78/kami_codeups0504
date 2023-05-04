@@ -1,0 +1,72 @@
+@use "global" as *;
+
+/* ---- slick ---- */
+.mv__slider {
+  height: 100vh;
+  margin-inline: auto;
+  overflow: hidden; /* 画像がはみ出ないようにする */
+  width: 100%;
+}
+.mv__slick-img img {
+  width: 100%;
+}
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15); /* 拡大率 */
+  }
+}
+.add-animation {
+  animation: zoomUp 10s linear 0s normal both;
+}
+
+/* ---- /slick ---- */
+
+.mv__slider {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.mv,
+.mv__inner,
+.mv__slick-img {
+  height: 100vh;
+}
+
+.mv img {
+  height: 100vh;
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.mv {
+  position: relative;
+}
+.mv__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+}
+
+.mv__title-main {
+  font-size: rem(28);
+  @include mq(md) {
+    font-size: rem(50);
+  }
+}
+
+.mv__title-sub {
+  font-size: rem(20);
+  @include mq(md) {
+    font-size: rem(25);
+  }
+}

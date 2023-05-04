@@ -1,0 +1,14 @@
+@use "global" as *;
+@use "./base/**" as *;
+@use "./plugin/**" as *;
+@use "./module/**" as *;
+@use "./page/**" as *;
+
+/* 共通パーツ */
+body {
+  background-color: #111;
+  color: #fff;
+}
+a {
+  display: block;
+}

@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.drawer.is-active {
+  display: block;
+}
+
+.drawer__items {
+  padding: rem(208) 0;
+  overflow: scroll;
+  height: 100%;
+}
+
+.drawer__item {
+  width: 100%;
+}
+
+.drawer__item a {
+  display: block;
+  text-align: center;
+  padding: rem(10) 0;
+  height: inherit;
+  font-weight: $normal;
+  font-variant-ligatures: none;
+  letter-spacing: rem(2);
+}

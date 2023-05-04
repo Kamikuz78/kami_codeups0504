@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.h2 {
+  margin-top: 75px;
+  background-color: yellow;
+  color: black;
+  width: 100%;
+  display: block;
+}
+
+// .header__drawer {
+//   font-size: rem(20);
+//   background-color: $black;
+//   color: $white;
+// }
+
+.card__info.dog {
+  justify-content: flex-end;
+}
+.card__category.dog {
+  background-color: #c6c6c4;
+}
+.card__text.dog {
+  text-align: center;
+}
+.dog-img {
+  aspect-ratio: 300 / 400;
+}
+.dog-img img {
+  // aspect-ratio: 200 / 300;
+  // width: auto;
+  // height: auto;
+  // width: auto;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

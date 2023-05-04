@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.common-slide-dots {
+  margin-top: rem(0);
+  padding: 0;
+  text-align: center;
+  @include mq(md) {
+    width: 95%;
+  }
+}
+
+.common-slide-dots li {
+  position: relative;
+  display: inline-block;
+  width: rem(8);
+  height: rem(8);
+  margin: 0 rem(5.5);
+  padding: 0;
+  cursor: pointer;
+}
+
+.common-slide-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: rem(8);
+  height: rem(8);
+  padding: rem(5);
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+  position: relative;
+}
+
+.common-slide-dots li.slick-active button:before {
+  color: #f9f871;
+}
+
+.common-slide-dots li button:before {
+  font-family: "slick";
+  font-size: rem(8);
+  line-height: rem(8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: rem(8);
+  height: rem(8);
+  content: "•";
+  text-align: center;
+  color: #c4c4c4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

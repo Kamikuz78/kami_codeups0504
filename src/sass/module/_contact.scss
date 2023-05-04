@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.contact {
+  background-color: #3d3d3d;
+  padding: rem(67) 0;
+  @include mq(md) {
+    padding: rem(148) 0;
+  }
+}
+
+.contact__header {
+  position: relative;
+  z-index: 1;
+}
+
+.contact__subtitle {
+  top: -43px;
+  @include mq(md) {
+    top: rem(-72);
+  }
+}
+
+.contact__inner {
+  align-items: center;
+}
+
+.contact__text {
+  margin-top: rem(25);
+  letter-spacing: rem(2);
+  @include mq(md) {
+    text-align: center;
+  }
+}
+.contact__button {
+  font-size: rem(20);
+}
+
+.contact__button-wrapper {
+  text-align: center;
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(61);
+  }
+}

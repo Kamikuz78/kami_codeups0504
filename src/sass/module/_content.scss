@@ -1,0 +1,35 @@
+@use "global" as *;
+.content {
+  position: relative;
+  margin-top: rem(49);
+}
+
+.content::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: rem(-36);
+  transform-origin: top left;
+  background-color: $yellow;
+  width: 1px;
+  height: calc(778 / 375) * 95vw;
+  transform: rotate(-29deg);
+  z-index: -1;
+  @include mq(md) {
+    height: calc(1714 / 1280) * 100vw;
+    transform: rotate(-45deg);
+    top: rem(-112);
+  }
+}
+
+.content__subtitle {
+  top: -43px;
+  @include mq(md) {
+    top: -25px;
+  }
+}
+
+.content__body {
+  margin-top: rem(48);
+  display: flex;
+}

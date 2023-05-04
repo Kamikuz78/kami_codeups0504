@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.section-title {
+  position: relative;
+  line-height: 1;
+  max-width: $inner;
+  margin: 0 auto;
+}
+
+.main-title {
+  font-weight: $normal;
+  font-size: rem(20);
+  letter-spacing: rem(2);
+  text-align: center;
+  @include mq(md) {
+    font-size: rem(30);
+  }
+}
+.sub-title {
+  font-size: rem(50);
+  font-family: $second-font-family;
+  color: $yellow;
+  letter-spacing: rem(2);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.2;
+  text-transform: capitalize;
+  z-index: -1;
+  @include mq(md) {
+    font-size: rem(110);
+    transform: initial;
+    left: 0;
+  }
+}
+
+.subtitle--right {
+  @include mq(md) {
+    left: initial;
+    right: 0;
+  }
+}
